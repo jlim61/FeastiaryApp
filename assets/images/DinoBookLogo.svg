@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 200 200">
+
+    <!-- Dinosaur (Behind the book) -->
+    <g transform="translate() rotate(3.5)">
+    <g transform="translate(8,-5) rotate(3.5)">
+            <!-- pineapple top -->
+    <defs>
+        <linearGradient id="leaf-gradient" x1="100%" y1="100%" x2="0%" y2="0%">
+            <stop offset="0%" stop-color="green" /> <!-- Bottom right -->
+            <stop offset="100%" stop-color="#C4D844" /> <!-- Top left -->
+        </linearGradient>
+        <linearGradient id="edge-leaf-gradient" x1="100%" y1="100%" x2="0%" y2="0%">
+            <stop offset="0%" stop-color="green" /> <!-- Bottom right -->
+            <stop offset="100%" stop-color="#C4D844" /> <!-- Top left -->
+        </linearGradient>
+        
+        <radialGradient id="edge-leaf-gradient" cx="50%" cy="100%" r="50%" fx="50%" fy="100%">
+            <stop offset="0%" style="stop-color:green; stop-opacity:1" /> <!-- Bottom middle color -->
+            <stop offset="100%" style="stop-color:#C4D844; stop-opacity:1" /> <!-- Top left color -->
+        </radialGradient>
+        <path id="pineapple-center-leaf" d="M92,73 Q86,59 97,48 Q107,61.5 101,73" style="stroke:#503013;stroke-width:1.5; stroke-linecap:round; fill:url(#leaf-gradient);"/>
+        <path id="pineapple-edge-leaf" d="M86,75 Q80,72 76,62 Q81,62 86,66 Q85,62 86,54 Q94,60 98,73" style="stroke:#503013;stroke-width:1.5; stroke-linecap:round; fill:url(#edge-leaf-gradient);" />
+        <path id="dino-wide-spine" d="M122,82 Q131,80 136,86 Q136,94 128,98" style="stroke:#503013;stroke-width:1.5; fill:#516915;" />
+    </defs>
+    
+    <use href="#pineapple-center-leaf" x="2" y="0" />
+    <g transform="translate(14,14)">
+        <use href="#pineapple-edge-leaf" x="4" transform="scale(0.8)" />
+        <use href="#pineapple-edge-leaf" x="8" transform="translate(172, 0) scale(-0.8, 0.8)" />
+    </g>
+</g>
+    
+    <g transform="translate(16,10) scale(0.85)">
+        <use href="#dino-wide-spine" x="-2" transform="rotate(-8 122 82)" />
+        <use href="#dino-wide-spine" x="10" y="18" transform="rotate(10 122 82)" />
+        <use href="#dino-wide-spine" x="40" y="10" transform="rotate(70 122 82)" />
+        <use href="#dino-wide-spine" x="" y="60" transform="rotate(10 122 82)" />
+        <use href="#dino-wide-spine" x="-66" y="58" transform="rotate(-45 122 82)" />
+    </g>
+
+             <!-- right leg -->                                    <!-- right arm -->
+    <path d=" M74.5,154 C72,158 72,162 76,165 C58,172 88,180 90,168 M76,134.5 Q70,138 66,142 Q66,145 69,144 Q67,150 74,148" style="stroke:#503013;stroke-width:1.5; stroke-linecap:round;fill:#FDC842;" />
+    <!-- dino head -->                                       <!-- Tummy -->                                   <!-- left leg -->       <!-- Tail -->                             <!-- Back -->            
+    <path d="M110,130 A30,30 0 1,0 70,96 Q68,101 68,100 C62,105 56,126 84,130 M79,129.5 C78,130 60,164 98,170 C90,178 119,180 117,168 Q130,170 140,160 C138,158 130,160 122,154 C122,148 110,134 115,128" style="stroke:#503013;stroke-width:1.5; stroke-linecap:round;fill:#FDC842;"/>
+    
+    <!-- Accent Outlines for left leg and back -->
+    <path d="M122,154 Q122.4,156 121,158 M98,170 L102,168 C99,166 99,157 104,156" style="stroke:#503013;stroke-width:1.5; stroke-linecap:round;fill:transparent" />
+    <!-- back/left arm -->
+    <path d="M98,140 Q94,144 94,148 Q95,148.5 96,147.5 C95,152 101,150 106,146" style="stroke:#503013;stroke-width:1.5; stroke-linecap:round; fill:transparent;" />
+    
+    
+    <!-- Left connect point to body 98,170 -->
+    <defs>
+        <path id="dino-eye" d="M79,105 A3,4 0 0,0 85,105 A3,4 0 0,0 79,105" style="fill:#503013;" />
+    </defs>
+        <use href="#dino-eye" x="-5" transform="rotate(8 82 105)" />
+        <use href="#dino-eye" x="20" y="0" />
+    <!-- mouth -->
+    <path d="M83,110 A5,4 0 0,0 93,111" style="stroke:#503013;stroke-width:1.5; stroke-linecap:round;fill:none;" />
+    </g>
+
+
+    <!-- Book (in front of the dinosaur) -->
+    <g transform="translate(-18, 50) scale(0.8)">
+        <!-- Back cover of book -->
+        <path d="M80,156 A5,5 0 0,0 80,170 L130,170 Q138,170 138,160 L138,150" style="stroke:#2B1701; stroke-width:1.5; fill:#6F3F19;"/>
+
+        <!-- Front cover/spine of book -->
+        <path d="M80,70 L110,70  
+                A10,10 0 0,0 120,80 
+                A10,10 0 0,0 140,90 
+                L140,150 
+                Q140,156 130,156
+                L80,156 
+                A5,5 0 0,0 80,170
+                Q70,170 70,156 
+                L70,80 
+                Q70,70 80,70"
+              style="stroke:#2B1701; stroke-width:1.5; fill:#895328;" />
+
+        <!-- Spine shadow -->
+        <path d="M78,70.75 L80,70.75 L80,155.15 L78,155.6 L78,70.75" style="fill:#713E1C;" />
+
+        <!-- Cookie -->
+        <g transform="translate(94, 100) scale(0.15)">
+          <path d="M100,0 A50,50 0 0,1 100,200 A50,50 0 0,1 100,0" style="fill:#2B1701;" />
+          <path d="M100,10 A45,45 0 0,1 100,190 A45,45 0 0,1 100,10" style="fill:#DC9F4F" />
+          <path d="M110,103 
+                   C105,90 90,90 80,100 
+                   C70,110 80,120 90,120 
+                   C100,120 115,110 110,103" 
+                style="fill:#522C0C; stroke:#2B1701; stroke-width:1;" />
+          <path d="M155,133 
+                   C150,120 135,120 125,130 
+                   C115,140 125,150 135,150 
+                   C145,150 160,140 155,133" 
+                style="fill:#522C0C; stroke:#2B1701; stroke-width:1;" 
+                transform="rotate(30, 155, 133)" />
+          <path d="M110,33 
+                   C105,15 85,15 75,30 
+                   C65,45 75,60 90,60 
+                   C105,60 120,45 110,33" 
+                style="fill:#522C0C; stroke:#2B1701; stroke-width:1;" />
+          <path d="M170,68 
+                   C163,52 145,50 138,65 
+                   C130,80 137,95 151,92 
+                   C164,90 175,75 170,68" 
+                style="fill:#522C0C; stroke:#2B1701; stroke-width:1;" />
+          <path d="M60,83 
+                   C55,70 40,70 30,85 
+                   C20,100 30,115 40,115 
+                   C50,115 65,105 60,83" 
+                style="fill:#522C0C; stroke:#2B1701; stroke-width:1;" />
+          <path d="M90,181 
+                   C83,165 65,163 58,178 
+                   C50,193 57,208 71,205 
+                   C84,203 95,188 90,181" 
+                style="fill:#522C0C; stroke:#2B1701; stroke-width:1;"
+                transform="rotate(130, 90, 181)"/>
+        </g>
+
+        <!-- Pages of book -->
+        <path d="M134,156 L80,156 A5,5 0 0,0 80,166 L134,166 Q132,160 134,156" style="stroke:#2B1701; fill:#FEECC3;" />
+        <path d="M132.8,158 L85,158 A0.5,0.5 0 0,0 85,159 L132.5,159" style="fill:#E0BC7F;" />
+        <path d="M132.45,161 L93,161 A0.5,0.5 0 0,0 93,162 L132.5,162" style="fill:#E0BC7F;" />
+        </g>
+
+</svg>
