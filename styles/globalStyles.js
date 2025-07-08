@@ -1,6 +1,7 @@
 const Colors = {
   brand: '#96D29E',
   title: '#349140',
+  activeTab: '#595959'
 };
 
 const Spacing = {
