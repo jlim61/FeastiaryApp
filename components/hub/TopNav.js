@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Pressable } from 'react-native';
 import { FontAwesome6 } from '@expo/vector-icons';
-import { Colors, FontSizes } from '../../styles/globalStyles';
+import { Colors, FontSizes, FontWeights } from '../../styles/globalStyles';
 import FeastiaryText from '../FeastiaryText';
 
 const TopNav = ({ Title }) => {
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     title: {
         color: 'black',
         fontSize: FontSizes.large,
-        fontWeight: '600',
+        fontWeight: FontWeights.semiBold,
     },
 });
 

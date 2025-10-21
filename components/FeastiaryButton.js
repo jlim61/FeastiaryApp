@@ -16,7 +16,8 @@ const styles = StyleSheet.create({
   defaultButton: {
     backgroundColor: Colors.brand,
     borderRadius: 26,
-    padding: 12,
+    paddingVertical: 12,
+    paddingHorizontal: 20,
     height: 54,
   },
 });

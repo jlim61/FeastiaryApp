@@ -18,6 +18,11 @@ const FontSizes = {
 
 const FontFamilies = {
   regular: 'Inter',
-}
+};
 
-export { Colors, Spacing, FontSizes, FontFamilies };
+const FontWeights = {
+    medium: 500,
+    semiBold: 600,
+};
+
+export { Colors, Spacing, FontSizes, FontFamilies, FontWeights };

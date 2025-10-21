@@ -1,7 +1,7 @@
 import { StyleSheet, View, Text, Keyboard, TouchableWithoutFeedback } from 'react-native';
 import { useState, useEffect } from 'react';
 import { FeastiaryInput, FeastiaryButton } from '../../components';
-import { FontSizes, Colors } from '../../styles/globalStyles';
+import { FontSizes, Spacing, FontWeights } from '../../styles/globalStyles';
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../../firebase';
 import { onAuthStateChanged } from 'firebase/auth'; 
@@ -67,12 +67,12 @@ const styles = StyleSheet.create({
     buttonContainer: {
         display: 'flex',
         flexDirection: 'column',
-        gap: 16,
+        gap: Spacing.medium,
     },
     buttonText: {
         fontSize: FontSizes.large,
         color: 'black',
-        fontWeight: 600,
+        fontWeight: FontWeights.semiBold,
     },
 });
 
