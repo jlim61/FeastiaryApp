@@ -1,7 +1,7 @@
 import { StyleSheet, View, Keyboard, TouchableWithoutFeedback } from 'react-native';
 import { useState } from 'react';
 import { FeastiaryButton, FeastiaryText } from '../../components';
-import { FontSizes, Colors } from '../../styles/globalStyles';
+import { FontSizes, Colors, Typography } from '../../styles/globalStyles';
 import LoginScreen from './LoginScreen';
 import RegisterScreen from './RegisterScreen';
 
@@ -29,7 +29,7 @@ return (
             <View style={styles.container}>
                 {isAuthScreen ? (
                 <View style={styles.authContainer}>
-                    <FeastiaryText Style={styles.titleText}>feastiary</FeastiaryText>
+                    <FeastiaryText Style={Typography.BrandTitleText}>feastiary</FeastiaryText>
 
                     <View style={styles.buttonContainer}>
                     <FeastiaryButton
@@ -38,7 +38,7 @@ return (
                         OnPress={GoToLogin}
                     />
                     <FeastiaryButton
-                        TitleStyle={styles.buttonText}
+                        TitleStyle={Typography.LargeButtonText}
                         Title="Register"
                         OnPress={GoToRegister}
                     />
@@ -67,16 +67,6 @@ const styles = StyleSheet.create({
     buttonContainer: {
         flexDirection: 'column',
         gap: 16,
-    },
-    buttonText: {
-        fontSize: FontSizes.large,
-        color: 'black',
-        fontWeight: '600',
-    },
-    titleText: {
-        fontSize: FontSizes.title,
-        color: Colors.title,
-        fontWeight: '600',
     },
 });
 

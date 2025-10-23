@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Pressable } from 'react-native';
 import { FontAwesome6 } from '@expo/vector-icons';
-import { Colors, FontSizes, FontWeights } from '../../styles/globalStyles';
+import { Colors, FontSizes, FontWeights, Typography } from '../../styles/globalStyles';
 import FeastiaryText from '../FeastiaryText';
 
 const TopNav = ({ Title }) => {
@@ -25,7 +25,7 @@ const TopNav = ({ Title }) => {
             </View>
 
             <View style={styles.titleContainer}>
-                <FeastiaryText Style={styles.title}>{Title}</FeastiaryText>
+                <FeastiaryText Style={Typography.BlackLargeText}>{Title}</FeastiaryText>
             </View>
         </View>
     );
@@ -46,11 +46,6 @@ const styles = StyleSheet.create({
     },
     titleContainer: {
         alignItems: 'center',
-    },
-    title: {
-        color: 'black',
-        fontSize: FontSizes.large,
-        fontWeight: FontWeights.semiBold,
     },
 });
 

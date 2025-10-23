@@ -5,9 +5,11 @@ import TopNav from '../../components/hub/TopNav';
 import BottomNav from '../../components/hub/BottomNav';
 import ProfileScreen from '../profile/ProfileScreen';
 import FoodLog from '../log/FoodLog';
+import AddEntryModal from '../../components/AddEntryModal';
 
 const HubScreen = ({ OnSignOut }) => {
   const [title, setTitle] = useState('Food Log');
+  const [entryModalVisible, setEntryModalVisible] = useState(false);
 
   const changeTitle = (newTitle) => {
     setTitle(newTitle);
@@ -19,7 +21,7 @@ const HubScreen = ({ OnSignOut }) => {
         return <ProfileScreen OnSignOut={OnSignOut} />;
 
       case 'Food Log':
-        return <FoodLog />;
+        return <FoodLog OpenEntryModal={() => setEntryModalVisible(true)} />;
 
       // Add more cases as your hub grows:
       // case 'Settings':
@@ -47,6 +49,7 @@ const HubScreen = ({ OnSignOut }) => {
     <View style={styles.container}>
       <TopNav Title={title} />
       <View style={styles.content}>{renderContent()}</View>
+      <AddEntryModal Visible={entryModalVisible} OnClose={() => setEntryModalVisible(false)} />
       <BottomNav ChangeTitle={changeTitle} />
     </View>
   );

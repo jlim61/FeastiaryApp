@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { FeastiaryInput, FeastiaryButton } from '../../components';
 import { auth } from '../../firebase';
 import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
-import { FontSizes } from '../../styles/globalStyles';
+import { FontSizes, Typography } from '../../styles/globalStyles';
 
 const RegisterScreen = ({ OnBackToAuth }) => {
   const [email, setEmail] = useState('');
@@ -57,13 +57,13 @@ const registerUser = () => {
 
             <View style={styles.buttonContainer}>
             <FeastiaryButton
-                TitleStyle={styles.buttonText}
+                TitleStyle={Typography.LargeButtonText}
                 Title="Register"
                 OnPress={registerUser}
             />
 
             <FeastiaryButton
-                TitleStyle={styles.buttonText}
+                TitleStyle={Typography.LargeButtonText}
                 Title="Back to Authentication"
                 OnPress={OnBackToAuth}
             />
@@ -82,11 +82,6 @@ const styles = StyleSheet.create({
     buttonContainer: {
         flexDirection: 'column',
         gap: 16,
-    },
-    buttonText: {
-        fontSize: FontSizes.large,
-        color: 'black',
-        fontWeight: '600',
     },
 });
 

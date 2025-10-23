@@ -25,4 +25,54 @@ const FontWeights = {
     semiBold: 600,
 };
 
-export { Colors, Spacing, FontSizes, FontFamilies, FontWeights };
+const Typography = Object.freeze({
+    BrandTitleText: {
+        fontSize: 48,
+        fontFamily: 'Inter',
+        color: Colors.title,
+        fontWeight: 600
+    },
+    BlackLargeText: {
+        fontSize: 24,
+        fontFamily: 'Inter',
+        color: 'black',
+        fontWeight: 600
+    },
+    LargeButtonText: {
+        fontSize: 24,
+        fontFamily: 'Inter',
+        color: 'Black',
+        fontWeight: 600
+    },
+    SmallButtonText: {
+        fontSize: 16,
+        fontFamily: 'Inter',
+        color: 'Black',
+        fontWeight: 600
+    }
+});
+
+const Layout = Object.freeze({
+    Column: {
+        display: 'flex',
+        flexDirection: 'column'
+    },
+    Row: {
+        display: 'flex',
+        flexDirection: 'row'
+    },
+    JustifyContentBetween: {
+        justifyContent: 'space-between'
+    },
+    JustifyContentEven: {
+        justifyContent: 'space-evenly'
+    },
+    JustifyContentCenter: {
+        justifyContent: 'center'
+    },
+    AlignItemsCenter: {
+        alignItems: 'center'
+    }
+});
+
+export { Colors, Spacing, FontSizes, FontFamilies, FontWeights, Typography, Layout };
