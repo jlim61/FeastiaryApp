@@ -33,7 +33,7 @@ return (
 
                     <View style={styles.buttonContainer}>
                     <FeastiaryButton
-                        TitleStyle={styles.buttonText}
+                        TitleStyle={styles.LargeButtonText}
                         Title="Login"
                         OnPress={GoToLogin}
                     />
