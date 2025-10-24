@@ -1,7 +1,8 @@
 const Colors = {
   brand: '#96D29E',
   title: '#349140',
-  activeTab: '#595959'
+  activeTab: '#595959',
+  subCategory: '#504949'
 };
 
 const Spacing = {
@@ -38,6 +39,12 @@ const Typography = Object.freeze({
         color: 'black',
         fontWeight: 600
     },
+    GreyMediumText: {
+        fontSize: 20,
+        fontFamily: 'Inter',
+        color: Colors.subCategory,
+        fontWeight: 600
+    },
     LargeButtonText: {
         fontSize: 24,
         fontFamily: 'Inter',
@@ -56,6 +63,26 @@ const Layout = Object.freeze({
     Column: {
         display: 'flex',
         flexDirection: 'column'
+    },
+    ColumnGap8Px: {
+        display: 'flex',
+        flexDirection: 'column',
+        rowGap: 8
+    },
+    ColumnGap16Px: {
+        display: 'flex',
+        flexDirection: 'column',
+        rowGap: 8
+    },
+    ColumnGap24Px: {
+        display: 'flex',
+        flexDirection: 'column',
+        rowGap: 24
+    },
+    ColumnGap32Px: {
+        display: 'flex',
+        flexDirection: 'column',
+        rowGap: 24
     },
     Row: {
         display: 'flex',

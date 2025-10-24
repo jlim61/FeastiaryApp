@@ -32,16 +32,16 @@ return (
                     <FeastiaryText Style={Typography.BrandTitleText}>feastiary</FeastiaryText>
 
                     <View style={styles.buttonContainer}>
-                    <FeastiaryButton
-                        TitleStyle={styles.LargeButtonText}
-                        Title="Login"
-                        OnPress={GoToLogin}
-                    />
-                    <FeastiaryButton
-                        TitleStyle={Typography.LargeButtonText}
-                        Title="Register"
-                        OnPress={GoToRegister}
-                    />
+                        <FeastiaryButton
+                            TitleStyle={Typography.LargeButtonText}
+                            Title="Login"
+                            OnPress={GoToLogin}
+                        />
+                        <FeastiaryButton
+                            TitleStyle={Typography.LargeButtonText}
+                            Title="Register"
+                            OnPress={GoToRegister}
+                        />
                     </View>
                 </View>
                 ) : !newUserStatus ? (
